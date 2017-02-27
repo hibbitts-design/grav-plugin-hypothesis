@@ -1,0 +1,26 @@
+name: Hypothesis
+version: 0.9.0
+description: This plugin displays the Hypothesis sidebar on your Grav site.
+icon: plug
+author:
+  name: Paul Hibbitts
+  email: paul@hibbittsdesign.org
+homepage: https://github.com/hibbitts-design/grav-plugin-hypothesis
+keywords: grav, plugin, hypothesis, annotation
+bugs: https://github.com/hibbitts-design/grav-plugin-hypothesis/issues
+docs: https://github.com/hibbitts-design/grav-plugin-hypothesis/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
