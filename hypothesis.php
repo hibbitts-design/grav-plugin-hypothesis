@@ -51,6 +51,15 @@ class HypothesisPlugin extends Plugin
      */
     public function onPageContentRaw(Event $e)
     {
+        $page = $this->grav['page'];
+        $header = $page->header();
+
+        if (isset($header->hide_hypothesis)) {
+          $excludes = $header->hide_hypothesis;
+          if ($excludes)
+          return;
+        }
+
         // Get a variable from the plugin configuration
         //$text = $this->grav['config']->get('plugins.hypothesis.text_var');
         $post_text = '<script async defer src="https://hypothes.is/embed.js"></script>';

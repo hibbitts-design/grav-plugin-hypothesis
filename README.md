@@ -33,3 +33,10 @@ Here is the default configuration and an explanation of available options:
 ```yaml
 enabled: true
 ```
+
+## Page Options
+Once the plugin is installed, Grav pages will support the following Page Header/FrontMatter option:
+
+```
+hide_hypothesis: true    # hide Hypothesis sidebar on this page
+```
