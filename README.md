@@ -1,6 +1,6 @@
 # Hypothesis Plugin
 
-The **Hypothesis** Plugin is for [Grav CMS](http://github.com/getgrav/grav). This plugin displays the [Hypothesis](https://hypothes.is/) sidebar on your Grav site.
+The **Hypothesis** Plugin is for [Grav CMS](http://github.com/getgrav/grav) and displays the [Hypothesis](https://hypothes.is/) sidebar on your Grav site.
 
 ## Installation
 
