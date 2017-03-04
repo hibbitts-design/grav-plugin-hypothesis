@@ -1,5 +1,5 @@
 # v0.9.2
-##  03/04/2017
+##  03/06/2017
 
 1. [](#improved)
     * Updated Blueprints plugin description.
