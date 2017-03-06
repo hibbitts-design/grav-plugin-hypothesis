@@ -6,6 +6,7 @@ author:
   name: Paul Hibbitts
   email: paul@hibbittsdesign.org
 homepage: https://github.com/hibbitts-design/grav-plugin-hypothesis
+demo: http://demo.hibbittsdesign.org/grav-hypothesis-plugin/
 keywords: grav, plugin, hypothesis, annotation
 bugs: https://github.com/hibbitts-design/grav-plugin-hypothesis/issues
 docs: https://github.com/hibbitts-design/grav-plugin-hypothesis/blob/master/README.md
