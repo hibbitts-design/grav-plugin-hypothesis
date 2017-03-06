@@ -34,7 +34,10 @@ Here is the default configuration and an explanation of available options:
 enabled: true
 ```
 
-## Page Options
+## Page Options (Admin Panel)
+!['Hypothesis' Admin page option](https://github.com/paulhibbitts/github-repo-images/blob/master/hypothesis-admin-panel-page-options.png?raw=true)
+
+## Page Options (Markdown)
 Once the plugin is installed, Grav pages will support the following Page Header/FrontMatter option:
 
 ```
