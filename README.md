@@ -2,6 +2,8 @@
 
 The **Hypothesis** Plugin is for [Grav CMS](http://github.com/getgrav/grav) and displays the [Hypothesis](https://hypothes.is/) sidebar on your Grav site.
 
+![](https://github.com/paulhibbitts/github-repo-images/blob/master/hypothesis.png?raw=true)
+
 ## Installation
 
 Installing the Hypothesis plugin can be done in one of two ways. The GPM (Grav Package Manager) installation method enables you to quickly and easily install the plugin with a simple terminal command, while the manual method enables you to do so via a zip file.
