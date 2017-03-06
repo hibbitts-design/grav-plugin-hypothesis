@@ -3,6 +3,7 @@ namespace Grav\Plugin;
 
 use Grav\Common\Plugin;
 use RocketTheme\Toolbox\Event\Event;
+use Grav\Common\Theme;
 
 /**
  * Class HypothesisPlugin
@@ -23,8 +24,16 @@ class HypothesisPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
-            'onPluginsInitialized' => ['onPluginsInitialized', 0]
+            'onPluginsInitialized' => ['onPluginsInitialized', 0],
+            'onGetPageTemplates' => ['onGetPageTemplates', 0]
         ];
+    }
+
+    public function onGetPageTemplates($event)
+    {
+      $types = $event->types;
+      $locator = $this->grav['locator'];
+      $types->scanBlueprints($locator->findResource('plugin://' . $this->name . '/blueprints'));
     }
 
     /**

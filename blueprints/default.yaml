@@ -1,0 +1,33 @@
+title: Hypothesis Options
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        options:
+          type: tab
+
+          fields:
+
+            OER:
+                type: section
+                title: Hypothesis
+                underline: true
+
+            header.hide_hypothesis:
+                type: toggle
+                label: Display Hypothesis Sidebar
+                help: Determines if the Hypothesis sidebar is displayed for this page
+                default: 0
+                highlight: 0
+                options:
+                    0:  Yes
+                    1:  No
+                validate:
+                    type: bool
