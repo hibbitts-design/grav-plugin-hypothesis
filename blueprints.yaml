@@ -1,10 +1,11 @@
 name: Hypothesis
-version: 0.9.3
+version: 1.0.0
 description: This plugin displays the [Hypothesis](https://hypothes.is/) sidebar on your Grav site.
 icon: plug
 author:
-  name: Paul Hibbitts
-  email: paul@hibbittsdesign.org
+  name: Hibbitts Design
+  email: hello@hibbittsdesign.org
+  url: http://hibbittsdesign.org
 homepage: https://github.com/hibbitts-design/grav-plugin-hypothesis
 demo: http://demo.hibbittsdesign.org/grav-hypothesis-plugin/
 keywords: grav, plugin, hypothesis, annotation

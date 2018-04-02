@@ -1,3 +1,9 @@
+# v1.0.0
+##  03/02/2018
+
+1. [](#new)
+    * Changed plugin author information to Hibbitts Design
+
 # v0.9.3
 ##  03/16/2017
 
