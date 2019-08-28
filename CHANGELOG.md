@@ -1,3 +1,9 @@
+# v1.0.1
+##  08/28/2019
+
+1. [](#improved)
+    * Hypothesis sidebar is not displayed within Presentations or Slides (by the Presentation Plugin)
+
 # v1.0.0
 ##  03/02/2018
 
