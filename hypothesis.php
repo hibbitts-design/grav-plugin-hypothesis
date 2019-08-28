@@ -63,6 +63,10 @@ class HypothesisPlugin extends Plugin
         $page = $this->grav['page'];
         $header = $page->header();
 
+        if ($this->grav['page']->template() == 'presentation' or $this->grav['page']->template() == 'slide') {
+          return;
+        }
+
         if (isset($header->hide_hypothesis)) {
           $excludes = $header->hide_hypothesis;
           if ($excludes)
