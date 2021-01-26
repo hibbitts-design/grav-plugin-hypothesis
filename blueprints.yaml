@@ -1,5 +1,7 @@
 name: Hypothesis
-version: 1.0.1
+type: plugin
+slug: hypothesis
+version: 1.0.2
 description: This plugin displays the [Hypothesis](https://hypothes.is/) sidebar on your Grav site.
 icon: plug
 author:
