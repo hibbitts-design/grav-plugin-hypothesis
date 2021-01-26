@@ -1,3 +1,9 @@
+# v1.0.2
+##  01/26/2021
+
+1. [](#improved)
+    * Updated plugin blueprints for Grav 1.7
+
 # v1.0.1
 ##  08/28/2019
 
