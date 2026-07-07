@@ -2,7 +2,6 @@
 namespace Grav\Plugin;
 
 use Grav\Common\Plugin;
-use RocketTheme\Toolbox\Event\Event;
 use Grav\Common\Theme;
 
 /**
@@ -48,19 +47,21 @@ class HypothesisPlugin extends Plugin
 
         // Enable the main event we are interested in
         $this->enable([
-            'onPageContentRaw' => ['onPageContentRaw', 0]
+            'onTwigSiteVariables' => ['onTwigSiteVariables', 0]
         ]);
     }
 
     /**
      * Do some work for this event, full details of events can be found
      * on the learn site: http://learn.getgrav.org/plugins/event-hooks
-     *
-     * @param Event $e
      */
-    public function onPageContentRaw(Event $e)
+    public function onTwigSiteVariables()
     {
         $page = $this->grav['page'];
+        // Guard against no resolved page
+        if (!$page) {
+            return;
+        }
         $header = $page->header();
 
         if ($this->grav['page']->template() == 'presentation' or $this->grav['page']->template() == 'slide') {
@@ -73,15 +74,7 @@ class HypothesisPlugin extends Plugin
           return;
         }
 
-        // Get a variable from the plugin configuration
-        //$text = $this->grav['config']->get('plugins.hypothesis.text_var');
-        $post_text = '<script async defer src="https://hypothes.is/embed.js"></script>';
-
-        // Get the current raw content
-        $content = $e['page']->getRawContent();
-
-        // Prepend the output with the custom text and set back on the page
-        //$e['page']->setRawContent($text . "\n\n" . $content);
-        $e['page']->setRawContent( $content. $post_text );
+        // Add the Hypothesis embed script as an asset (avoids Markdown escaping raw HTML)
+        $this->grav['assets']->addJs('https://hypothes.is/embed.js', ['loading' => 'defer', 'group' => 'bottom']);
     }
 }
