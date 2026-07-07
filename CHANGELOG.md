@@ -1,3 +1,12 @@
+# v1.0.3
+##  07/07/2026
+
+1. [](#improved)
+    * Add 1.7|2.0 compatibility flags
+
+1. [](#bugfix)
+    * Fix Hypothesis embed script being escaped as text by injecting via Grav's 2.0 asset manager instead of raw page content
+
 # v1.0.2
 ##  01/26/2021
 

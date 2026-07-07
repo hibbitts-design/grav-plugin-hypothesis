@@ -1,7 +1,7 @@
 name: Hypothesis
 type: plugin
 slug: hypothesis
-version: 1.0.2
+version: 1.0.3
 description: This plugin displays the [Hypothesis](https://hypothes.is/) sidebar on your Grav site.
 icon: plug
 author:
@@ -14,6 +14,8 @@ keywords: grav, plugin, hypothesis, annotation
 bugs: https://github.com/hibbitts-design/grav-plugin-hypothesis/issues
 docs: https://github.com/hibbitts-design/grav-plugin-hypothesis/blob/master/README.md
 license: MIT
+compatibility:
+  grav: ['1.7', '2.0']
 
 form:
   validation: strict
