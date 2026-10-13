@@ -1,3 +1,9 @@
+# v1.0.4
+## 10/13/2026
+
+1. [](#bugfix)
+    * Yes/No switches in the page settings show their labels in Admin on hosts with PHP's native YAML extension
+
 # v1.0.3
 ##  07/07/2026
 
